@@ -17,7 +17,7 @@
                 Intern Dashboard
             </div>
             
-            <!-- Accessible Mobile Nav using details/summary -->
+            <!-- Accessible Mobile Nav -->
             <details class="mobile-nav">
                 <summary aria-label="Toggle navigation">Menu</summary>
                 <nav aria-label="Mobile navigation">
@@ -36,8 +36,8 @@
             </nav>
 
             <div class="user-profile">
-                <!-- Button instead of span for accessibility -->
-                <button class="notification-btn" aria-label="Notifications">
+                <!-- Added aria-label to expose unread count -->
+                <button class="notification-btn" aria-label="Notifications, 3 unread">
                     <span aria-hidden="true">🔔</span>
                     <span class="badge" data-badge="3"></span>
                 </button>
@@ -56,7 +56,6 @@
             <div class="progress-container">
                 <p id="progress-label">Internship Progress</p>
                 <div class="progress-bar-bg">
-                    <!-- Progress bar with aria label -->
                     <div class="progress-bar-fill" role="progressbar" aria-labelledby="progress-label" aria-valuenow="65" aria-valuemin="0" aria-valuemax="100"></div>
                 </div>
                 <p class="progress-text">65% Complete</p>
@@ -95,13 +94,13 @@
             </div>
         </section>
 
-        <!-- NEW: Form Section (Required by AI) -->
+        <!-- Form Section -->
         <section id="submit-task" class="dashboard-card full-width">
             <h2>Submit a Task</h2>
             <form action="#" method="post">
                 <div class="form-group">
                     <label for="task-name">Task Name</label>
-                    <input type="text" id="task-name" name="task-name" placeholder="e.g. CSS Task 9" required>
+                    <input type="text" id="task-name" name="task-name" placeholder="e.g. CSS Task 9" required autocomplete="off">
                 </div>
                 <div class="form-group">
                     <label for="task-desc">Description</label>
@@ -116,6 +115,7 @@
             <h2>Internship Summary</h2>
             <div class="table-responsive">
                 <table>
+                    <caption>Overview of current internship programs</caption>
                     <thead>
                         <tr>
                             <th>Program</th>
