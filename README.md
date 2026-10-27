@@ -13,6 +13,7 @@ I tested the Internship Dashboard using browser DevTools.
 - **Animations:** Confirmed the `@keyframes fillProgress` animates the progress bar from 0 to 65% on page load.
 - **Logical Properties:** Verified that `margin-block-end` applies correct spacing regardless of text direction.
 
+
 **3. Accessibility Testing:**
 - Tabbed through the page: The `:focus-visible` outlines appear on all interactive elements.
 - **Reduced Motion:** Toggled "Emulate CSS prefers-reduced-motion: reduce" in DevTools Rendering tab. Verified that the progress bar animation is disabled and jumps immediately to 65%.
