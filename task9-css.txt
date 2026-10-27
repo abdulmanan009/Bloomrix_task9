@@ -1,0 +1,19 @@
+Build the following practical page using HTML and CSS. Reuse the CSS concepts learned on earlier days. The assignment should be functional and visually organized, not just a collection of isolated examples.
+• Build an internship/application dashboard using the HTML forms, tables, cards, and navigation from previous days.
+• Create a complete CSS variable system for colors, spacing, typography, radii, shadows, and layout widths.
+• Create at least two visual themes, such as light and dark, using custom properties and prefers-color-scheme or a class/data attribute.
+• Use calc(), min(), max(), and clamp() meaningfully in the layout or typography.
+• Use :is(), :where(), :not(), and :has() at least once where they provide a real benefit.
+• Use @layer to separate reset/base, components, utilities, and overrides.
+• Use @supports to provide a fallback or enhancement for a modern CSS feature.
+• Use a container query for at least one card or dashboard component so that it responds to its container rather than only the viewport.
+• Create an animated status/progress component using @keyframes.
+• Use transitions and transforms for dashboard interactions.
+• Add a notification or badge using pseudo-elements and generated content.
+• Use a CSS counter for numbered application steps or lessons.
+• Use at least one filter or backdrop-filter effect where appropriate.
+• Use gradients and layered backgrounds for a polished header or dashboard panel.
+• Add a responsive multi-column text section using CSS columns.
+• Use logical properties in at least one component.
+• Add reduced-motion handling for animations.
+• Test the dashboard at multiple viewport sizes and with reduced-motion preference enabled.

@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Internship Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Skip link for accessibility -->
+    <a href="#main-content" class="skip-link">Skip to dashboard</a>
+
+    <header class="site-header">
+        <div class="header-content">
+            <div class="logo">
+                <span class="logo-icon">📊</span>
+                Intern Dashboard
+            </div>
+            
+            <nav class="main-nav" aria-label="Main navigation">
+                <a href="#overview">Overview</a>
+                <a href="#applications">Applications</a>
+                <a href="#tasks">Tasks</a>
+            </nav>
+
+            <!-- Notification Badge using generated content -->
+            <div class="user-profile">
+                <span class="notification-icon" data-badge="3">🔔</span>
+                <span>Abdul Manan</span>
+            </div>
+        </div>
+    </header>
+
+    <main id="main-content" class="dashboard-grid">
+
+        <!-- Welcome / Header Panel -->
+        <section id="overview" class="dashboard-card full-width panel-gradient">
+            <h1>Welcome back, Abdul! 👋</h1>
+            <p class="text-secondary">You have 2 pending tasks and 1 interview scheduled.</p>
+            
+            <div class="progress-container">
+                <p>Internship Progress</p>
+                <div class="progress-bar-bg">
+                    <!-- Animated progress bar using @keyframes -->
+                    <div class="progress-bar-fill" role="progressbar" aria-valuenow="65" aria-valuemin="0" aria-valuemax="100"></div>
+                </div>
+                <p class="progress-text">65% Complete</p>
+            </div>
+        </section>
+
+        <!-- Application Steps using CSS Counter -->
+        <section id="applications" class="dashboard-card">
+            <h2>Application Process</h2>
+            <ol class="steps-list">
+                <li>Submit Resume & Cover Letter</li>
+                <li>Complete Coding Assessment</li>
+                <li>Technical Interview</li>
+                <li>Final HR Review</li>
+            </ol>
+        </section>
+
+        <!-- Container Query Card -->
+        <section id="tasks" class="dashboard-card container-card">
+            <h2>Recent Tasks</h2>
+            <div class="task-list">
+                <div class="task-item">
+                    <div class="task-info">
+                        <h3>HTML Task 1</h3>
+                        <p>Profile Page</p>
+                    </div>
+                    <span class="status-pill status-complete">Completed</span>
+                </div>
+                <div class="task-item">
+                    <div class="task-info">
+                        <h3>CSS Task 8</h3>
+                        <p>Responsive Layout</p>
+                    </div>
+                    <span class="status-pill status-pending">Pending</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- Table Summary Area -->
+        <section class="dashboard-card full-width">
+            <h2>Internship Summary</h2>
+            <div class="table-responsive">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Program</th>
+                            <th>Mentor</th>
+                            <th>Status</th>
+                            <th>Start Date</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Software Engineering</td>
+                            <td>Sarah Jenkins</td>
+                            <td><span class="status-pill status-complete">Active</span></td>
+                            <td>Oct 01, 2026</td>
+                        </tr>
+                        <tr>
+                            <td>Web Development</td>
+                            <td>David Chen</td>
+                            <td><span class="status-pill status-complete">Active</span></td>
+                            <td>Oct 15, 2026</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+
+        <!-- Multi-column Text Section -->
+        <section class="dashboard-card full-width">
+            <h2>Internship Guidelines</h2>
+            <div class="multi-column-text">
+                <p>Welcome to the internship program. Please ensure all tasks are submitted by their respective deadlines. The program requires a minimum of 20 hours of work per week. Mentors will review your progress weekly and provide feedback.</p>
+                <p>Remember that all submissions must be your own work. Plagiarism will result in immediate termination from the program. If you have any questions, please reach out to your assigned mentor or the HR department.</p>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="site-footer">
+        <p>&copy; 2026 Intern Dashboard. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>
